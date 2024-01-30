@@ -1,33 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"> <!-- Espacio lateral --> </div>
-            <div class="col-md-8">
-                <!-- Botones de Traducción -->
-                <div id="language-switcher">
-                    <button id="btn-es">ES</button>
-                    <button id="btn-en">EN</button>
-                </div>
-                <!-- Contenido Principal -->
-                <div id="main-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="col-md-2"> <!-- Espacio lateral --> </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#profile">Profile</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#work">Work</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+      </div>
+    </nav>
+    
+    <section class="container mt-5" id='home'>
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <img src="profile-placeholder.png" alt="Profile placeholder" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-12 col-lg-8">
+          <h1>Your Name</h1>
+          <p>Professional summary or introduction text will go here. It should succinctly highlight your achievements, experience, and career goals. Aim to intrigue and impress potential employers or clients who view your CV.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container mt-5" id='skills'>
+      <div class="row">
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container mt-5" id='work'>
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="work-placeholder.png" alt="Work" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container mt-5" id='contact'>
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <!-- Contact form elements go here -->
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoB+jvoZDr2ZB2545KbkiPjYYg3AXwWPLHRVlI5uZhe/8Vl9MOKRJWTQ+vcCT4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Km9QjQpGEekAKFqLpKF4MpKJm08fJBY1s3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>

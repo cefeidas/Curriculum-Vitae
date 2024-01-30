@@ -1,29 +1,97 @@
-/* Estilos Personalizados */
+/* Custom styles for the navigation bar consistent with the Cybernetic Dawn color palette */
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: #f8f9fa;
-}
-
-#toggleLanguageBtn {
-    margin: 20px 0;
-    display: inline-block;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contentArea {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-/* Espacios laterales en escritorio */
-.d-none.d-md-block {
-    background: #e9ecef;
-}
+#mainNavbar {
+    background-color: #011627; /* muted navy blue base */
+    border-bottom: 2px solid #08bdba; /* soft teal for a subtle accent */
+    z-index: 1030; /* ensure navbar stays on top */
+    position: fixed; /* Fix navbar to the top of the screen */
+    top: 0; /* Align navbar to the top */
+    width: 100%; /* Full width */
+  }
+  
+  #mainNavbar .navbar-brand,
+  #mainNavbar .nav-link {
+    color: #fdfffc; /* using off-white for contrast against the dark navy */
+    transition: color 0.3s ease; /* smooth color transition for interactivity */
+  }
+  
+  #mainNavbar .nav-link:hover,
+  #mainNavbar .nav-link:focus {
+    color: #21e6c1; /* electric cyan for hover state */
+    background-color: transparent; /* ensure no background color change */
+  }
+  
+  #mainNavbar .navbar-toggler {
+    border-color: #7fdbca; /* matching with the theme for the toggle button */
+  }
+  
+  #mainNavbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%237fdbca' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      padding-top: 56px; /* Add top padding to body equal to navbar height on medium screens */
+      padding-left: 2rem; /* 2-8-2 margin on the left */
+      padding-right: 2rem; /* 2-8-2 margin on the right */
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body {
+      padding-top: 56px; /* Add top padding to body equal to navbar height on large screens */
+    }
+    
+    .col-lg-4, .col-lg-8 {
+      /* Split screen effect */
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1200px) {
+    body {
+      padding-top: 56px; /* Add top padding to body equal to navbar height on extra large screens */
+      padding-left: 1rem; /* 2-4-4-2 margin on the left */
+      padding-right: 1rem; /* 2-4-4-2 margin on the right */
+    }
+    
+    /* Adjust column layout to match design spec for extra large screens */
+    .container > .row {
+      margin-left: 16.6667%; /* Equivalent to 2 Bootstrap grid columns on the left for 2-4-4-2 layout */
+      margin-right: 16.6667%; /* Equivalent to 2 Bootstrap grid columns on the right for 2-4-4-2 layout */
+    }
+      
+    .col-lg-4 {
+      flex: 0 0 33.3333%; /* 4 Bootstrap grid columns wide */
+      max-width: 33.3333%;
+    }
+    
+    .col-lg-8 {
+      flex: 0 0 66.6666%; /* 8 Bootstrap grid columns wide */
+      max-width: 66.6666%;
+    }
+  }
+  
+  /* Styles for the 'Home' section */
+  
+  #home h1 {
+    color: #FDCA40; /* Add a highlight color for the main heading, e.g., a shade from the Cybernetic Dawn palette */
+    font-family: 'Orbitron', sans-serif; /* Example of a futuristic font */
+  }
+  
+  #home p {
+    color: #CDD7E2; /* Cool grey for text, remains accessible and visually pleasing */
+    font-family: 'Roboto', sans-serif; /* Modern, clean, sans-serif font */
+  }
+  
+  #home .img-fluid {
+    border: 3px solid #21e6c1; /* Border color from the palette */
+    border-radius: 50%; /* Circular profile image */
+    margin-bottom: 1rem;
+  }
+  
+  /* Additional styling rules if necessary... */
